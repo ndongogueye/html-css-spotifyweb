@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column
+}
+
+.main-container  {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+}
+
+body > *,.main-container > *{
+    min-height: 100px;
+}
+
+.head {
+    text-align: center;
+}
+
+.upgrade {
+    background-color: rgb(9, 12, 26);
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.upgrade button {
+    padding: 0.5em;
+    background-color: rgba(250, 235, 215, 0.021);
+    color: white;
+    border-radius: 20px;
+    border-color: white;
+}
+
+.main-content-container {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: rgb(7, 7, 31);
+}
+
+.play-nav-container {
+    height: 30px;
+    flex-shrink: 0;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+.logo img {
+    width: 100%;
+    max-width: 150px;
+    padding: 1rem 0;
+    
+}
+.navbar{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    flex-shrink: 0;
+    color: grey;
+   
+}
+
+.home {
+    border-left:5px solid green ;
+}
+
+.lente {
+    padding-left: 5px;
+}
+
+.libro { 
+    padding-left: 5px;
+}
+
+.navbar li {
+    padding: 5px 0;
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.nav-playlist {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.nav-playlist button {
+   padding: 0.5em;
+   background-color: lightgray;
+   border: none;
+   margin-top: 10px;
+}
+
+.nav-playlist p {
+    padding: 1rem 0;
+}
+
+.nav-footer {
+    padding-top: 10.5em;
+}
+.nav-footer h3 {
+    padding-top:1em ;
+    color: white;
+}
+
+hr {
+    width: 160px;
+}
+
+li:hover {
+color: white;
+}
+
+h3:hover {
+  color: white;  
+}
+p:hover {
+    color: white;
+}
+
+
+.main-content-container ul {
+    display: flex ;
+    list-style: none;
+    justify-content: center;
+    color: grey;
+    margin-top: 1rem;
+}
+li {
+    padding-right: 1rem;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: grey;
+}
+
+.row h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.canzoni p {
+    text-align: center;
+}
+
+.playlist h2{
+margin-bottom: 1rem;
+}
+img {
+    width: 100%;
+    max-width: 265px;
+}
+
+.playlist {
+    color: white;
+    margin-top: 7rem;
+    margin-left: 1rem;
+}
+
+.row {
+    display: flex;
+    color: white;
+}
+
+.col {
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 6) ;
+  
+}
+
+.music-daily {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.music-daily h2 {
+    margin-bottom: 1rem;
+}
+
+.canzoni {
+    margin-right: 1rem;
+}
+
+.radar {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.artisti {
+    margin-top: 2rem;
+    margin-left:1rem ;
+}
+
+.artisti p {
+    margin: 1rem 0;
+}
+
+.artisti img {
+    margin-right: 1rem;
+    border-radius: 100%;
+    max-width: 250px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+
+.play-nav-container img {
+    width: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.play-container{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 1;
+}
+
+ .testo-container {
+    margin-right: 3rem;
+ }
+
+ .play-nav-container i {
+    margin-right: 1rem;
+ }
+
+ .play-nav-container i {
+    color: white;
+ }
+
+ .minutes {
+    margin-top: 1rem;
+ }
+
+.barra {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.barra-nav{
+    background-color: gray;
+    border-radius: 1px;
+    max-width: 100%;
+    width: 35vw;
+    height: 4px;
+}
+
+
+.barretta-nav{
+    border: 2px solid;
+  border-radius: 1px;
+  max-width: 100%;
+  width: 25%;
+  height: 4px; 
+  color: white;
+}
+
+.lines-tiny-nav-grey {
+     background-color: gray;
+  border-radius: 1px;
+  max-width: 75%;
+  width: 90px;
+  height: 4px;
+
+  }
+
+.lines-tiny-nav-white {
+    background-color: white;
+    border-radius: 1px;
+    max-width: 25%;
+    width: 25px;
+    height: 4px;
+   
+}
+
+.logo-small {
+    display: none;
+}
+
+.play-button-container {
+    flex-grow: 1;
+    max-width: 500px;
+    width: 100%;
+}
+
+.play-container{
+
+}
+.barra {
+    flex-grow: 1;
+}
+
+.play-stop {
+ text-align: center;
+    flex-grow: 1
+}
+
+.minutes {
+    display: flex;
+}
+
+.icone {
+    display: flex;
+    padding-right: 1rem;
+}
+
+hr {
+    ma
+}
+
+@media  and {
+    
+}
+
+@media screen and (max-width:600px){
+    .navbar p,h3,hr,.nav-playlist {
+        display: none;
+        }
+
+        ul {
+            width: 100%;
+        }
+        .none {
+            display: none;
+        }
+
+       .logo-small {
+        display: contents;
+        background-image: url(../assets/img/logo-small.svg);
+        background-repeat: no-repeat;
+       }
+        
+      .card {
+        width: calc(100%/2)
+      }
+
+      
+        
+        .logo-small img {
+            display: flex;
+        width: 25px;
+        align-items: center;
+           
+        }
+        
+        .logo img {
+            display: none;
+        }
+        
+          ul span {
+            display: none;
+          } 
+        
+          .home {
+            border-left: none;
+          }
+
+          .navbar li {
+            padding-left: 0px;
+          }
+         
+          .lines-tiny-nav-grey {
+            max-width: 100%;
+            width: 20px;
+          }
+
+          .lines-tiny-nav-white {
+            max-width: 100%;
+            width: 8px;
+          }
+
+          .navbar{
+            width: 35px;
+          }
+
+          .testo-container {
+            margin-right: 10px;
+          }
+}
+
+
+
+
+@media  screen and (max-width:700px){
+    .card {
+        width: calc(100%/2)
+      }   
+
+      .testo-container {
+        margin-right: 10px;
+      }
+}
+
+@media  screen and (max-width:1100px) {
+    .card {
+        width: calc(100%/4)
+      }   
+
+      .lines-tiny-nav-grey {
+        max-width: 100%;
+        width: 20px;
+      }
+
+      .lines-tiny-nav-white {
+        max-width: 100%;
+        width: 8px;
+      }
+}
